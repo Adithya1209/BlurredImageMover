@@ -8,7 +8,7 @@ basepath = "./pictures/"
 for entry in os.listdir(basepath):
     if os.path.isfile(os.path.join(basepath, entry)):
         #print(entry)
-        img_path = "./pictures/"+entry
+        img_path = basepath+entry
         dest_path = "./blurry_pics"
         #print(img_path)
         img = cv2.imread(img_path,cv2.IMREAD_GRAYSCALE)
